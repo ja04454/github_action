@@ -28,6 +28,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
         shell: bash
+<<<<<<< HEAD
 
       - name: Make zip file
         run: zip -qq -r ./$GITHUB_SHA.zip .
@@ -45,3 +46,5 @@ jobs:
 
       - name: Code Deploy
         run: aws deploy create-deployment --application-name testapp --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name dev --s3-location bucket=github-action-prac,bundleType=zip,key=$PROJECT_NAME/$GITHUB_SHA.zip
+=======
+>>>>>>> 895494c0a00299273c0ac843b5ef5561368056e5
