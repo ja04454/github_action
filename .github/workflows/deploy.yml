@@ -6,7 +6,7 @@ on:
 name: Deploy String boot to Amazon EC2
 env:
   PROJECT_NAME: action_codedeploy
-  S3_BUCKET_NAME: deploy-prac
+  S3_BUCKET_NAME: depoly-prac
 
 jobs:
   deploy:
